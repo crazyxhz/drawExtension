@@ -1133,6 +1133,7 @@ define("dojo/_base/declare dojo/_base/lang dojo/_base/array dojo/_base/connect d
 				case Draw.ELLIPSE:
 					Draw = new _Polygon(map.spatialReference), this._graphic = map.graphics.add(new graphic(Draw, this.fillSymbol), !0), this._graphic.geometry = _Polygon.createEllipse({ center: screenPt, longAxis: 48, shortAxis: 24, numberOfPoints: 60, map: map }), this._graphic.setGeometry(this._graphic.geometry), this._drawEnd(this._graphic.geometry);
 					break;
+
 				case Draw.CURVE:
 					if (this._points.length === 1)
 					{

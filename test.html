@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://localhost/js/3.9/js/esri/css/esri.css">
+    <script src="http://localhost/js/3.9/"></script>
+    <style>
+        html, body, #mapDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+    </style>
+    <script>
+
+        var map;
+        require(["esri/map", "dojo/domReady!"], function (Map)
+        {
+            map = new Map("mapDiv", {
+                center: [-56.049, 38.485],
+                zoom: 3,
+                basemap: "streets"
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div id="mapDiv"></div>
+
+</body>
+</html>
